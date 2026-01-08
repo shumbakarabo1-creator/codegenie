@@ -1,0 +1,8 @@
+{
+  "name": "CodeGenie",
+  "short_name": "CodeGenie",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#007bff",
+  "background_color": "#ffffff"
+}
