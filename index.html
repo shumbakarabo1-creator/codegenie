@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeGenie</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://unpkg.com/monaco-editor@0.44.0/min/vs/loader.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>CodeGenie</h1>
+  <select id="language">
+    <option>Python</option>
+    <option>JavaScript</option>
+    <option>Java</option>
+    <option>C++</option>
+    <option>HTML</option>
+    <option>SQL</option>
+  </select>
+</header>
+
+<textarea id="prompt" placeholder="Describe the code you want..."></textarea>
+
+<div class="buttons">
+  <button onclick="runAI('Generate')">Generate</button>
+  <button onclick="runAI('Debug')">Debug</button>
+  <button onclick="runAI('Explain')">Explain</button>
+  <button onclick="runAI('Optimize')">Optimize</button>
+</div>
+
+<div id="editor"></div>
+
+<footer>
+  <button onclick="saveProject()">Save</button>
+  <button onclick="toggleTheme()">Dark / Light</button>
+</footer>
+
+<script src="app.js"></script>
+</body>
+    </html>
